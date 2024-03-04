@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "eMaBarbieni",
+  "description": "Barbie themed eMabini",
+  "version": "1.0",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  }, 
+  "action": {
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png",
+      "48": "images/icon-48.png",
+      "128": "images/icon-128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "css": ["css/style.css"],
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://emabini.pup.edu.ph/*"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/emabarbieni.png"],
+      "matches": ["https://*/*"]
+    }
+  ]
+}

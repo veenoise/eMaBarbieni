@@ -1,0 +1,7 @@
+body {
+    background-color: pink !important;
+}
+:root{
+    --color_primary: #fd2978bf !important;
+    --color_secondary: #FF8BC5!important;
+}
